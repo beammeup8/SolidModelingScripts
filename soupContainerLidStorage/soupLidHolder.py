@@ -19,7 +19,7 @@ base = cylinder(r=outer_r, h=mat_thickness) - \
     cylinder(r=inner_r * skirt_mod, h=mat_thickness)
 
 # create the vertical pice to keep the lids in place
-vert_h = thickness * count
+vert_h = thickness * count + mat_thickness
 vertical = cylinder(r=inner_r + mat_thickness, h=vert_h) - \
     cylinder(r=inner_r, h=vert_h)
 
