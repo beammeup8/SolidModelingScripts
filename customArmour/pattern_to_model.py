@@ -2,6 +2,16 @@
 
 from solid2 import *
 
-obj = cube(1,1,1)
+scale = cube(9.5,9.5,2)
+step = 10
 
-obj.save_as_scad("soupContainerLidStorage/soupLidHolder.scad")
+max_x = 300
+max_y = 300
+
+obj = scale
+
+for x in range(0, max_x, step):
+   for y in range(0, max_y, step):
+    obj += scale.right(x).forward(y)
+
+obj.save_as_scad("customArmour/basicArmourOutputTest.scad")
