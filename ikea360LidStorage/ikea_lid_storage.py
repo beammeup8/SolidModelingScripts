@@ -1,6 +1,7 @@
 #! /usr/bin/env python
 
 from solid2 import *
+import math
 
 #change this value to change the number of lids that can be stored
 slots = 6
@@ -10,7 +11,7 @@ slots = 6
 # Slicer should treat these as mm
 width = 100
 spacing = 25
-height = 50
+height = 75
 matThickness = 5
 
 
@@ -19,17 +20,20 @@ side = left(matThickness)(cube(2*matThickness, sideLen, matThickness))
 peg = cylinder(r=matThickness, h=height)
 
 # piece to connect the sides
-connPiece = left(width)(cube(width, matThickness, matThickness/2))
+diag_len = sqrt(width**2 + spacing**2)
+theta = math.degrees(atan(spacing/width))
+diag = cube(diag_len, matThickness, matThickness/2).left(width)
+connPiece = diag.rotateZ(theta).forward(spacing) + diag.rotateZ(-theta)
 
 # add pegs
 for i in range(slots + 1):
-  side = side + forward(i*spacing)(peg)
+  side = side + peg.forward(i * spacing)
 
 # add the second side
 obj = side + left(width)(side)
 
 # add the connection pieces
 for i in range(slots):
-  obj = obj + forward((i*spacing) + spacing/2)(connPiece)
+  obj = obj + connPiece.forward((i*spacing) - matThickness/2)
 
 obj.save_as_scad("ikea360LidStorage/ikea360LidStorage.scad")
