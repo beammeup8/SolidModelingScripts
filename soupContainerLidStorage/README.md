@@ -4,7 +4,7 @@ I designed this to allow me to store the lids for the soup takeout containers th
 ![soupLidHolder.png](soupLidHolder.png)
 
 ## Printing
-I printed the listed STL file using 5% infill in PLA, with 0.2mm layer height on a Prusa mks3+. I would not go for lower infill than the 5% I used and I would go higher if being repurposed for anything bigger or heavier than plastic lids, and would not go lower regardless of the usecase.
+I printed the listed STL file using 10% infill in PLA, with 0.2mm layer height on a Prusa mks3+. I would not go for lower infill than the 5% I used and I would go higher if being repurposed for anything bigger or heavier than plastic lids, and would not go lower regardless of the usecase.
 
 ## Resizing
 * `lid_dim`: Diameter of the circle biggest circle that you want to be able to store in mm. Please add the buffer you would like, as the code assumes the actual inner diameter will be the number supplied here
