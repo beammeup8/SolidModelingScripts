@@ -10,7 +10,7 @@ The way I designed it you can regenerate the openSCAD files, and then render tha
 </p>
 
 ## Printing
-I printed the listed STL file using 5% infill in PLA, with 0.2mm layer height on a Prusa mks3+. I would not go for lower infill than the 10% I used and I would go higher if being repurposed for anything bigger or heavier than plastic lids
+I printed the listed STL file using 10% infill in PLA, with 0.2mm layer height on a Prusa mks3+. I would not go for lower infill than the 10% I used and I would go higher if being repurposed for anything bigger or heavier than plastic lids
 
 ![Printed 360 lid storage in black PLA](360LidIsoView.jpg)
 
