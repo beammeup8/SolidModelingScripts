@@ -36,4 +36,4 @@ obj = side + left(width)(side)
 for i in range(slots):
   obj = obj + connPiece.forward((i*spacing) - matThickness/2)
 
-obj.save_as_scad("ikea360LidStorage/ikea360LidStorage.scad")
+obj.save_as_scad("ikea365LidStorage/ikea365LidStorage.scad")

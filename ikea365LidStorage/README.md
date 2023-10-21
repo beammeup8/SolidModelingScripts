@@ -1,10 +1,10 @@
-# IKEA 360 Lid Storage
-Organizer to store the plastic lids for the IKEA 360 food storage containers vertically so they are both easy to access and stop sticking together as they do when stacked.
+# IKEA 365 Lid Storage
+Organizer to store the plastic lids for the IKEA 365 food storage containers vertically so they are both easy to access and stop sticking together as they do when stacked.
 
 The way I designed it you can regenerate the openSCAD files, and then render that and export to stl for a variety of other organizational tasks if desired.
 
 <p align="center">
-<img src="ikea360LidStorageRender.png"
+<img src="ikea365LidStorageRender.png"
      alt="Picture of the 3D render of the model"
      height=500m/>
 </p>
@@ -12,7 +12,7 @@ The way I designed it you can regenerate the openSCAD files, and then render tha
 ## Printing
 I printed the listed STL file using 10% infill in PLA, with 0.2mm layer height on a Prusa mks3+. I would not go for lower infill than the 10% I used and I would go higher if being repurposed for anything bigger or heavier than plastic lids
 
-![Printed 360 lid storage in black PLA](360LidIsoView.jpg)
+![Printed 365 lid storage in black PLA](365LidIsoView.jpg)
 
 ## Resizing
 ### Number of Lids Stored
