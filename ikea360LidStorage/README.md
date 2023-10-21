@@ -12,6 +12,8 @@ The way I designed it you can regenerate the openSCAD files, and then render tha
 ## Printing
 I printed the listed STL file using 5% infill in PLA, with 0.2mm layer height on a Prusa mks3+. I would not go for lower infill than the 10% I used and I would go higher if being repurposed for anything bigger or heavier than plastic lids
 
+![Printed 360 lid storage in black PLA](360LidIsoView.jpg)
+
 ## Resizing
 ### Number of Lids Stored
 To change the number of lids the organizer can handle simply change the number assigned to `slots` to whichever value you would prefer, and rerun the program and the OpenSCAD file will have the correct number of slots, with the length and pieces connecting each side adujesting as well
