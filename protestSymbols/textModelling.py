@@ -9,7 +9,6 @@ def generateProtestButton(words, textSize, totalHeight, isAnti):
   boarderThick = textSize/2
   gap = 0.15
 
-  base = cylinder(r = diameter/2, h = height).down(height)
   textObj = (extrudedText(words, height * 0.75, textSize))
   
   obj, backgroundArea, borderObj = createParts(textObj, diameter, boarderThick, height, isAnti, gap)
